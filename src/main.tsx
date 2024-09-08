@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './index.css';
+import './styles/index.css';
 
 import App from './App.tsx';
 import CandidateSearch from './pages/CandidateSearch.tsx';
@@ -15,6 +15,10 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+        element: <CandidateSearch />,
+      },
+      {
+        path: '/home',
         element: <CandidateSearch />,
       },
       {

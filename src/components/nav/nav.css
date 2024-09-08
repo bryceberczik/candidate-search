@@ -1,0 +1,27 @@
+div ul li {
+
+    list-style: none;
+    display: inline;
+    margin: 25px;
+}
+
+.activeNav {
+
+    color: #fafaff;
+    font-weight: 600;
+}
+
+.activeNav:hover {
+
+    color: #d6d2d2;
+}
+
+.restNav {
+
+    color: whitesmoke;
+}
+
+.restNav:hover {
+
+    color:#d6d2d2;
+}

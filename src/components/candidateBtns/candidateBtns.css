@@ -1,0 +1,31 @@
+.decline {
+
+    background-color: red;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.accept {
+
+    background-color: green;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.icon {
+
+    font-size: 40px;
+}
+
+.btn-container {
+    
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
