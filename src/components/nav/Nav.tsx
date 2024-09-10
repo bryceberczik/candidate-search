@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import './nav.css'
+import "./nav.css";
 
 const Nav = () => {
   const currentPage = useLocation().pathname;
@@ -19,7 +19,9 @@ const Nav = () => {
         <li>
           <Link
             to="/SavedCandidates"
-            className={currentPage === "/SavedCandidates" ? "activeNav" : "restNav"}
+            className={
+              currentPage === "/SavedCandidates" ? "activeNav" : "restNav"
+            }
           >
             Potential Candidates
           </Link>

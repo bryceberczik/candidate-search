@@ -13,9 +13,11 @@ const CandidateBtns: React.FC<CandidateBtnsProps> = ({ candidate }) => {
   };
 
   const onAccept = () => {
-    const savedCandidates = JSON.parse(localStorage.getItem('savedCandidates') || '[]');
+    const savedCandidates = JSON.parse(
+      localStorage.getItem("savedCandidates") || "[]"
+    );
     savedCandidates.push(candidate);
-    localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
+    localStorage.setItem("savedCandidates", JSON.stringify(savedCandidates));
     window.location.reload();
   };
 
@@ -29,6 +31,6 @@ const CandidateBtns: React.FC<CandidateBtnsProps> = ({ candidate }) => {
       </button>
     </div>
   );
-}
+};
 
 export default CandidateBtns;
