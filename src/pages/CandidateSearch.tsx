@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { searchGithub, searchGithubUser } from "../api/API";
 import CandidateCard from "../components/candidateCard/candidateCard";
 import Candidate from "../interfaces/Candidate.interface";
-import CandidateBtns from "../components/candidateBtns/candidateBtns";
 
 const CandidateSearch = () => {
   const [candidateData, setCandidateData] = useState<Candidate | null>(null);
@@ -43,7 +42,6 @@ const CandidateSearch = () => {
         {candidateData ? (
           <div>
             <CandidateCard {...candidateData} />
-            <CandidateBtns />
           </div>
         ) : (
           <p>Loading...</p>

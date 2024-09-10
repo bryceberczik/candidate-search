@@ -1,18 +1,24 @@
 import "./candidateBtns.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
+import Candidate from "../../interfaces/Candidate.interface";
 
-const onDecline = () => {
-
-  window.location.reload();
+interface CandidateBtnsProps {
+  candidate: Candidate;
 }
 
-const onAccept = () => {
+const CandidateBtns: React.FC<CandidateBtnsProps> = ({ candidate }) => {
+  const onDecline = () => {
+    window.location.reload();
+  };
 
-  window.location.reload();
-}
+  const onAccept = () => {
+    const savedCandidates = JSON.parse(localStorage.getItem('savedCandidates') || '[]');
+    savedCandidates.push(candidate);
+    localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
+    window.location.reload();
+  };
 
-export default function CandidateBtns() {
   return (
     <div className="btn-container">
       <button className="decline" onClick={onDecline}>
@@ -24,3 +30,5 @@ export default function CandidateBtns() {
     </div>
   );
 }
+
+export default CandidateBtns;
