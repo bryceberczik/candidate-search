@@ -20,6 +20,9 @@ In order to use this application, as it is a deployed project, no installation i
 ## Usage
 To use this application you must visit the URL and the api will begin calling once you load the page. From there you can decide whether to decline or accept a user. If you choose to accept a user you can visit the saved candidates on the navbar and see into further detail and compare the users all together.
 
+<img src='./src/assets/images/searching.png' alt="searching page" width="400">
+<img src='./src/assets/images/saved-candidates.png' alt="saved candidates" width="400">
+
 ## License
 This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
 
