@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Candidate from "../interfaces/Candidate.interface";
-import "../styles/SavedCandidates.css";
+import "../styles/savedCandidates.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
