@@ -1,4 +1,4 @@
-import "./candidatecard.css";
+import "./candidateCard.css";
 import Candidate from "../../interfaces/Candidate.interface";
 import CandidateBtns from "../candidateBtns/candidateBtns";
 const CandidateCard: React.FC<Candidate> = ({
