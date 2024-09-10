@@ -23,6 +23,12 @@ To use this application you must visit the URL and the api will begin calling on
 <img src='./src/assets/images/searching.png' alt="searching page" width="400">
 <img src='./src/assets/images/saved-candidates.png' alt="saved candidates" width="400">
 
+
+
+https://github.com/user-attachments/assets/c13af2dc-c958-4e37-bea6-091294057257
+
+
+
 ## License
 This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
 
